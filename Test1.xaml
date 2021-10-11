@@ -29,7 +29,8 @@
                         <Button Content="Добавить" Margin="10" Click="Add_Click" />
                         <Button Content="Изменить" Margin="10" Click="Edit_Click"  />
                         <Button Content="Удалить" Margin="10" Click="Delete_Click"  />
-                        <TextBox x:Name="tbSearchDock" HorizontalAlignment="Left" Height="44"  TextWrapping="Wrap"  Width="125" TextChanged="tbSearchDock_TextChanged" />
+                        <TextBox x:Name="tbSearchDock" HorizontalAlignment="Left" Height="30"   TextWrapping="Wrap"  Width="60" VerticalContentAlignment = "Bottom" TextChanged="tbSearchDock_TextChanged" />
+                        <Button x:Name="BtnExit" Content="Выйти" Margin="10" Click="BtnExit_Click"  />
                     </StackPanel>
                 </Grid>
             </StackPanel>

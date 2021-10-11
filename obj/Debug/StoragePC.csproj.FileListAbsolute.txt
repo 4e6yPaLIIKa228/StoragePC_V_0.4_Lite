@@ -120,3 +120,5 @@ C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\DateBase
 C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\DateBaseFull.baml
 C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\Test1.g.cs
 C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\Test1.baml
+C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\DateBaseFull2.g.cs
+C:\Users\Administrator\source\repos\StoragePC_V_0.1_Lite-main\obj\Debug\DateBaseFull2.baml

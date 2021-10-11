@@ -16,23 +16,23 @@ using System.Data.Entity;
 namespace StoragePC
 {
     /// <summary>
-    /// Логика взаимодействия для DateBase.xaml
+    /// Логика взаимодействия для DateBaseFull2.xaml
     /// </summary>
-    public partial class DateBase : Window
+    public partial class DateBaseFull2 : Window
     {
         ApplicationContext db;
         public Device Device { get; private set; }
 
-            public DateBase(Device p)
-            {
-                InitializeComponent();
-                db = new ApplicationContext();
-                Device = p;
-                this.DataContext = Device;
-            }
+        public DateBaseFull2(Device p)
+        {
+            InitializeComponent();
+            db = new ApplicationContext();
+            Device = p;
+            this.DataContext = Device;
+        }
 
-            private void Accept_Click(object sender, RoutedEventArgs e)
-    {
+        private void Accept_Click(object sender, RoutedEventArgs e)
+        {
 
             if (String.IsNullOrEmpty(TexBxName.Text) || String.IsNullOrEmpty(TexBxNumber.Text) || String.IsNullOrEmpty(TexBxtype.Text) || String.IsNullOrEmpty(TexBxKab.Text)) //Проверка,если ничего не ввели
             {
@@ -54,23 +54,23 @@ namespace StoragePC
                 catch (System.Data.Entity.Infrastructure.DbUpdateException)
                 {
 
-                    db.Devices.Remove(Device);
-                    db.SaveChanges();
-                    MessageBox.Show("Такой номер уже занят,выберите другой2");
+                    //db.Devices.Remove(Device);
+                    //db.SaveChanges();
+                    //MessageBox.Show("Такой номер уже занят,выберите другой2");
                     this.DialogResult = true;
                     return;
 
                 }
             }
-           
+
             //this.DialogResult = true;
 
-    }
+        }
 
 
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-           /* e.Handled = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТБЮ".IndexOf(e.Text) < 0;*/ //Только буквы(очень спорно)
+            /* e.Handled = "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХФЫВАПРОЛДЖЭЯЧСМИТБЮ".IndexOf(e.Text) < 0;*/ //Только буквы(очень спорно)
         }
     }
 

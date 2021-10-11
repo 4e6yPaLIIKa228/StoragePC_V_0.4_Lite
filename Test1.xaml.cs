@@ -39,7 +39,7 @@ namespace StoragePC
         {
             DeviceGrid.ItemsSource = db.Devices.ToList();
         }
-        // добавление
+        // добавление DateBase
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             DateBase f = new DateBase(new Device());
@@ -71,7 +71,7 @@ namespace StoragePC
             
 
         }
-        // редактирование
+        // редактирование DateBaseFull2
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
             // если ни одного объекта не выделено, выходим
@@ -79,7 +79,7 @@ namespace StoragePC
             // получаем выделенный объект
             Device device = DeviceGrid.SelectedItem as Device;
 
-            DateBase f = new DateBase(new Device
+            DateBaseFull2 f = new DateBaseFull2(new Device
             {
                 Id = device.Id,
                 Description = device.Description,
@@ -157,6 +157,11 @@ namespace StoragePC
 
             }
             
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

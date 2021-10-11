@@ -85,6 +85,9 @@
     <Compile Include="DateBaseFull.xaml.cs">
       <DependentUpon>DateBaseFull.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DateBaseFull2.xaml.cs">
+      <DependentUpon>DateBaseFull2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Device.cs" />
     <Compile Include="Regist.xaml.cs">
       <DependentUpon>Regist.xaml</DependentUpon>
@@ -98,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DateBaseFull.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DateBaseFull2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
